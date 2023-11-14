@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { User } = require("../../models");
+const bycrpt = require("bcrypt");
 
 // User registration
 router.post("/register", async (req, res) => {
@@ -18,6 +19,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
+
 // User login
 router.post("/login", async (req, res) => {
   try {
@@ -34,7 +36,10 @@ router.post("/login", async (req, res) => {
       return;
     }
 
-    const validPassword = await userData.checkPassword(password);
+    const validPassword = await bcrypt.compare(
+      req.body.password,
+      userData.password
+    )
 
     if (!validPassword) {
       res
