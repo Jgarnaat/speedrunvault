@@ -10,16 +10,16 @@ const commentFormHandler = async (event) => {
 
   if (commentDescription) {
     try {
-      const response = await fetch("/api/comments", {
+      const response = await fetch("/api/comment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ blog_id, comment_description }),
+        body: JSON.stringify({ blog_id, comment_description:commentDescription }),
       });
 
       if (response.ok) {
-        document.location.reload();
+       // document.location.reload();
       } else {
         // Handle errors here if needed
         console.error("Failed to submit comment");
