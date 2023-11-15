@@ -9,6 +9,7 @@ router.post("/", withAuth, async (req, res) => {
     const newBlog = await Blog.create({
       ...req.body,
       user_id: req.session.user_id,
+      
     });
 
     res.status(201).json(newBlog); // Changed status to 201 for successful resource creation

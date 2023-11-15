@@ -18,6 +18,12 @@ Blog.init(
     description: {
       type: DataTypes.STRING,
     },
+    category: {
+      type: DataTypes.STRING,
+    },
+    link: {
+      type: DataTypes.STRING,
+    },
     date_created: {
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,

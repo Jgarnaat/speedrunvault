@@ -1,11 +1,11 @@
-const createBlog = async (title, description) => {
+const createBlog = async (title, description, category, link) => {
     try {
       const response = await fetch('/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ title, description }),
+        body: JSON.stringify({ title, description, category, link }),
       });
   
       if (response.ok) {

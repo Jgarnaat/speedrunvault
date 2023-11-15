@@ -19,6 +19,7 @@ const sess = {
   secret: process.env.SESSION_SECRET || 'Super secret secret',
   cookie: {
     maxAge: 24 * 60* 60 * 1000,
+    secure: false,
     // Set your cookie options here (e.g., secure: true, maxAge: ...)
   },
   resave: false,
@@ -28,9 +29,11 @@ const sess = {
   })
 };
 // Use helmet for security headers
+app.use(session(sess));
+
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session(sess));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
