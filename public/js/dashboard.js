@@ -1,5 +1,6 @@
 const createBlog = async (title, description, category, link) => {
     try {
+      
       const response = await fetch('/api/blogs', {
         method: 'POST',
         headers: {
