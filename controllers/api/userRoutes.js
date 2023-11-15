@@ -1,20 +1,24 @@
 const express = require("express");
 const router = express.Router();
 const { User } = require("../../models");
-const bcrypt = require("bcrypt");
+const bycrpt = require("bcrypt");
 
 // User registration
 router.post("/register", async (req, res) => {
   try {
-    const userData = await User.create({
-      username: req.body.username,
-      password: req.body.password
-    });
+    const userData = await User.create(req.body);
 
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+
+      res.status(201).json(userData);
+    });
   } catch (err) {
     res.status(400).json({ error: "Bad Request", message: err.message });
   }
 });
+
 
 // User login
 router.post("/login", async (req, res) => {
@@ -33,9 +37,9 @@ router.post("/login", async (req, res) => {
     }
 
     const validPassword = await bcrypt.compare(
-      password,
+      req.body.password,
       userData.password
-    );
+    )
 
     if (!validPassword) {
       res
