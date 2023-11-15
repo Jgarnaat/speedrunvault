@@ -9,6 +9,9 @@ body {
     font-size: xx-large;
   }
   
+  .titleGif {
+    max-width: 200px;
+  }
   .blogBox {
     margin-top: 8px;
     border-style: solid;

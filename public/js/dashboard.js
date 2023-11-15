@@ -38,8 +38,10 @@ const createBlog = async (title, description, category, link) => {
     event.preventDefault();
     const title = document.querySelector('#blog-title').value.trim();
     const description = document.querySelector('#blog-desc').value.trim();
-    if (title && description) {
-      createBlog(title, description);
+    const category = document.querySelector('#blog-cata').value.trim();
+    const link = document.querySelector('#blog-link').value.trim();
+    if (title && description && category && link) {
+      createBlog(title, description, category, link);
     }
   };
   
