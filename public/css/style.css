@@ -8,7 +8,10 @@ body {
     font-weight: 900;
     font-size: xx-large;
   }
-  
+  .gif{
+    width: 125px;
+    height: 125px;
+  }
   .titleGif {
     max-width: 200px;
   }
