@@ -29,7 +29,32 @@ const commentFormHandler = async (event) => {
     }
   }
 };
+image_array = [
+  'gif_1.gif',
+  'gif_2.gif',
+  'gif_3.gif',
+  'gif_4.gif',
+  'gif_5.gif',
+  'gif_6.gif',
+  'gif_7.gif',
+  'gif_8.gif',
+  'gif_9.gif',
+  'gif_10.gif',
+  'gif_11.gif',
+  'gif_12.gif',
+  'gif_13.gif',
+  'gif_14.gif',
+  'gif_15.gif',
+  'gif_16.gif',
+  ]
 
+function randomImage(){
+  randomIndex =  Math.floor(Math.random() * image_array.length);
+
+  selected_image = image_array[randomIndex];
+
+  document.getElementById('gif').src=`/assets/gifs/${selected_image}`;}
+randomImage(),
 document
   .querySelector(".new-comment-form")
   .addEventListener("submit", commentFormHandler);
