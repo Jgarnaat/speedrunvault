@@ -1,7 +1,8 @@
 body {
-    background-color: rgb(172, 172, 172);
   
-    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/12/11/Abstract-dynamic-free-black-background-Graphics-7122026-1.jpg");
+  background-image: url('/public/images/pngtree-d-illustration-of-retro-arcade-game-machines-in-an-arcade-room-image_13544353.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust as needed: contain, cover, etc. */
 }  
 
   .navTitle {
@@ -50,8 +51,11 @@ body {
   }
   
   .blogBoxCont {
-      margin-top: 10px;
+    margin-top: 10px;
     border-style: solid;
+    border-width: 2px;
+    border-color: #ff6ec7; /* Replace with your desired neon pink color code */
+    box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7; /* Adjust the shadow properties as needed */
     background-color: rgb(62, 117, 143);
   }
   
@@ -68,8 +72,13 @@ body {
     margin-right: auto;
     margin-top: 10px;
     max-width: 75%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00bfff; /* Replace with your desired neon blue color code */
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff; /* Adjust the shadow properties as needed */
     background-color: rgb(62, 113, 143);
   }
+  
   
   .commentOwner {
     font-size: 14px;
@@ -86,7 +95,7 @@ body {
   }
   
   .commentCont {
-    border-style: dashed;
+    border-style: solid;
   }
   
   .headerRow {
@@ -116,3 +125,5 @@ body {
   .form-group{
       margin-top: 10px;
   }
+
+  
