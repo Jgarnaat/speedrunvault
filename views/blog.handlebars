@@ -9,21 +9,27 @@
             </div>
             
         </div>
-        <p class="text-center blogDescTwo">{{description}}</p>
         <p class="text-center blogDescTwo">{{category}}</p>
+        <p class="text-center blogDescTwo">{{description}}</p>
         <p class="text-center blogDescTwo">{{link}}</p>
     </div>
 
-    {{#if logged_in}}
-        <form class="new-comment-form formCont d-flex flex-wrap justify-content-center" data-blogid={{id}}>
-            <div class="textAreaCont p-2">
-                <textarea id='comment_description' name="comment-body" placeholder="Enter a comment here..." cols="30" rows="2"></textarea>
-            </div>
-            <div class="btnComment p-2">
-                <button class="button btn btn-success" type="submit">Add Comment!</button>
-            </div>
-        </form>
-    {{/if}}
+{{#if logged_in}}
+    <form class="new-comment-form formCont d-flex flex-wrap justify-content-center" data-blogid={{id}}>
+        <div class="textAreaCont p-2">
+            <textarea id='comment_description' name="comment-body" placeholder="Enter a comment here..." cols="30" rows="2"></textarea>
+        </div>
+        <div class="btnComment p-2">
+            <button class="button btn btn-success" type="submit">Add Comment!</button>
+        </div>
+        <!-- Add the delete comment button next to the add comment button -->
+        <div class="btnComment p-2">
+            <button class="button btn btn-danger" onclick="deleteComment()">Delete Comment</button>
+        </div>
+    </form>
+{{/if}}
+
+
 
     <h2 class="text-center">Comments</h2>
     {{#each comments as |comment|}}
