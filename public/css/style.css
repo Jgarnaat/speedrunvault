@@ -19,6 +19,8 @@ body {
   .blogBox {
     margin-top: 8px;
     border-style: solid;
+    border-color: #ff6ec7; /* Replace with your desired neon pink color code */
+    box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7; /* Adjust the shadow properties as needed */
   }
   
   .blogTitle {
@@ -31,6 +33,8 @@ body {
     margin-bottom: 5px;
     padding: 2px;
     background-color: rgb(145, 145, 145);
+    border-color: #00bfff; /* Replace with your desired neon blue color code */
+    box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff; /* Adjust the shadow properties as needed */
   }
   
   .blogDescMain {
