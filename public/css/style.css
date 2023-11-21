@@ -1,20 +1,28 @@
 body {
-  
-  background-image: url('/public/images/pngtree-d-illustration-of-retro-arcade-game-machines-in-an-arcade-room-image_13544353.png');
+  background-image: url("/assets/gifs/background.avif");
   background-repeat: no-repeat;
   background-size: cover; /* Adjust as needed: contain, cover, etc. */
 }  
 
   .navTitle {
     font-weight: 900;
-    font-size: xx-large;
+    font-size: 70px;
   }
-  .gif{
-    width: 125px;
-    height: 125px;
+  #gif{
+    display:inline; 
+    max-height: 50px;
+    max-width: 50px;
   }
-  .titleGif {
-    max-width: 200px;
+  .titleGif1 {
+    display:block;
+    width: auto;
+    height: 150px;
+  }
+  .titleGif2 {
+    margin-left: 40px;
+    display: block;
+    width: auto;
+    height: 175px;
   }
   .blogBox {
     margin-top: 8px;
