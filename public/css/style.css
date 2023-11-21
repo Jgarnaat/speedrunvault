@@ -59,7 +59,7 @@ body {
     font-style: italic;
     font-size: 12px;
     padding: 5px;
-    color: rgb(27, 213, 238);
+    color: black;
   }
   
   .blogBoxCont {
@@ -103,7 +103,7 @@ body {
   .commentText {
     font-weight: bold;
     padding-top: 10px;
-    background-color: rgb(99, 99, 99);
+    background-color: white;
   }
   
   .commentCont {
@@ -138,4 +138,6 @@ body {
       margin-top: 10px;
   }
 
-  
+  h2{
+    color: white;
+  }
