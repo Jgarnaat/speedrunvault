@@ -7,6 +7,8 @@ body {
   .navTitle {
     font-weight: 900;
     font-size: 70px;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    animation: pulsate 1.5s infinite alternate;  
   }
   #gif{
     display:inline; 
