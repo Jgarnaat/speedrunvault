@@ -1,4 +1,4 @@
-# Speedrunner Blog:
+# Speedrunner Vault:
 
 ## Badges
 
@@ -28,9 +28,9 @@ In this project we were tasked with applying concepts learned throughout past mo
 
 
 ## Deployed application
-- (placeholder-link-goes-here)
+- LIVE Deployment: 
 
-- (placeholder-image/gif here)
+- ![Demo](https://github.com/Jgarnaat/Group-project-2/assets/139593153/6ccf86f7-9112-4ca3-a288-7ccd96c18b2e)
 
 ## Installation
 
