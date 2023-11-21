@@ -7,7 +7,7 @@ const databaseConfig = {
     dialect: 'mysql',
     port: 3306,
   },
-  production: {
+  "production": {
     use_env_variable: 'JAWSDB_URL',
     dialect: 'mysql',
   },
