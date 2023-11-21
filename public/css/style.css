@@ -1,6 +1,5 @@
 body {
-  
-  background-image: url('/public/images/pngtree-d-illustration-of-retro-arcade-game-machines-in-an-arcade-room-image_13544353.png');
+  background-image: url("/assets/gifs/background.avif");
   background-repeat: no-repeat;
   background-size: cover; /* Adjust as needed: contain, cover, etc. */
 }  
