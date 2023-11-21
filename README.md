@@ -28,7 +28,7 @@ In this project we were tasked with applying concepts learned throughout past mo
 
 
 ## Deployed application
-- LIVE Deployment: 
+- LIVE Deployment: https://speedrunvault-651c67a5c9e8.herokuapp.com/
 
 - ![Demo](https://github.com/Jgarnaat/Group-project-2/assets/139593153/6ccf86f7-9112-4ca3-a288-7ccd96c18b2e)
 
