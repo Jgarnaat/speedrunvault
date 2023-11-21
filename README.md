@@ -1,4 +1,4 @@
-# Speedrunner Blog:
+# Speedrunner Vault:
 
 ## Badges
 
