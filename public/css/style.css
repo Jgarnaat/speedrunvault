@@ -1,5 +1,5 @@
 body {
-  background-image: url("/assets/gifs/background.avif");
+  background-image: url("/assets/gifs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* Adjust as needed: contain, cover, etc. */
 }  
