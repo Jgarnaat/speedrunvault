@@ -25,7 +25,7 @@ const commentFormHandler = async (event) => {
       // Check if the request was successful
       if (response.ok) {
         // Reload the document if the comment was submitted successfully
-        // document.location.reload();
+        document.location.reload();
       } else {
         // Handle errors here if needed
         console.error("Failed to submit comment");

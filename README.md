@@ -52,8 +52,9 @@ To use, first download the above required applications in [Installation](#instal
 - Run the command 'npm start' to initialize and startup the site in a local environment.
 
 ## Contributors:
+- Project inspiration: https://speeddemosarchive.com/
+- Helmet.js documentation: https://helmetjs.github.io/
 
 Group Participants:     
 - [Joshua Garnaat](https://github.com/Jgarnaat)
 - [Micah Dershem](https://github.com/G303K)
-- [Milbrun Pearson](https://github.com/mpearson1299)
