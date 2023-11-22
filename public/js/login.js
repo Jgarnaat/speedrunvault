@@ -34,7 +34,7 @@ const loginFormHandler = async (event) => {
         document.location.replace('/dashboard');
       } else {
         // Display an alert with the reason for login failure
-        alert(`Login failed: ${response.statusText}`);
+        alert(`Login failed: Invalid username/password`);
       }
     } catch (error) {
       // Log an error message if an error occurred during the request
