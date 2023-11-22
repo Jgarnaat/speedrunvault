@@ -35,7 +35,7 @@ const signupFormHandler = async (event) => {
       } else {
         // Display an alert with the reason for signup failure
         const errorMessage = await response.text();
-        alert(`Signup failed: ${response.statusText}\n${errorMessage}`);
+        alert(`Signup failed: Must provide a username, as well as a password with a length of at least 8 characters`);
       }
     } catch (error) {
       // Log an error message if an error occurred during the request
